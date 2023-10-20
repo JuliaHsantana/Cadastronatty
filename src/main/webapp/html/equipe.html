@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" media="screen"
+	href="../css/estilo.css" />
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="../imagens/logosem.png"
+	type="image/x-icon">
+<title>Natty Academy - Equipe</title>
+
+</head>
+<body>
+
+	<header>
+		<div>
+			<a href="../index.html"> <img src="../imagens/logo1.jpeg"
+				class="logo" alt="logo do site"></a> <span> Natty Academy</span>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="../html/incluir.html">Incluir Alunos</a></li>
+				<li><a href="html\consultar.html">Consultar Alunos</a></li>
+				<li><a href="ServletAluno?cmd=listar">Listar todos</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	</br>
+	</br>
+
+	<section>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+.mySlides {
+	display: none;
+}
+
+.text-block {
+	position: absolute;
+	bottom: 10px;
+	left: 210px;
+	right: 450px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 10px;
+	display: none;
+}
+
+.button-container {
+	position: absolute;
+	transform: translateY(-50%);
+	font-size: 24px;
+	width: 30px; /* Defina a largura desejada aqui */
+}
+
+.button-container button {
+	position: absolute;
+	transform: translateY(-50%);
+	font-size: 24px;
+}
+
+.button-left {
+	right: 47px;
+	top: -300px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.button-right {
+	left: 1000px;
+	top: -300px;
+	border-radius: 5px 5px 5px 5px;
+}
+/* Add media query for screens smaller than 768px */
+@media ( max-width : 768px) {
+	.mySlides {
+		width: 100%;
+	}
+	.text-block {
+		width: 100%;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+	.button-container {
+		display: none;
+	}
+}
+/* Styles for screens larger than 768px */
+@media ( min-width : 769px) {
+	.mySlides {
+		width: 60%;
+	}
+	.text-block {
+		width: auto;
+		left: 210px;
+		right: 450px;
+	}
+	/* Styles for the buttons */
+	.button-container {
+		position: absolute;
+		transform: translateY(-50%);
+		font-size: 24px;
+		width: 30px; /* Adjust the width as needed */
+	}
+	.button-container button {
+		position: absolute;
+		transform: translateY(-50%);
+		font-size: 24px;
+	}
+	.button-left {
+		right: 47px;
+		top: -300px;
+		border-radius: 5px 5px 5px 5px;
+	}
+	.button-right {
+		left: 1000px;
+		top: -300px;
+		border-radius: 5px 5px 5px 5px;
+	}
+}
+</style>
+		<center>
+			<div class="w3-content w3-display-container">
+
+				</br> </br> </br> </br>
+
+				<div class="cont">
+					<img class="mySlides" src="../imagens/Eduarda.png" alt="Norway"
+						style="width: 60%;">
+					<div class="text-block">
+						<h4>Eduarda Tiburcio</h4>
+						<p>------------------------</p>
+					</div>
+				</div>
+
+				<div class="cont">
+					<img class="mySlides" src="../imagens/Guilherme.jpeg" alt="Norway"
+						style="width: 60%;">
+					<div class="text-block">
+						<h4>Guilherme Viana</h4>
+						<p>------------------------</p>
+					</div>
+				</div>
+
+				<div class="cont">
+					<img class="mySlides" src="../imagens/Julia.jpeg" alt="Norway"
+						style="width: 60%;">
+					<div class="text-block">
+						<h4>Julia Helena</h4>
+						<p>------------------------</p>
+					</div>
+				</div>
+
+				<div class="cont">
+					<img class="mySlides" src="../imagens/Kevin.png" alt="Norway"
+						style="width: 60%;">
+					<div class="text-block">
+						<h4>Kevin Silva</h4>
+						<p>------------------------</p>
+					</div>
+				</div>
+
+				<div class="cont">
+					<img class="mySlides" src="../imagens/Renataa.png" alt="Norway"
+						style="width: 60%">
+					<div class="text-block">
+						<h4>Renata Peixoto</h4>
+						<p>------------------------</p>
+					</div>
+				</div>
+
+
+
+				<div class="button-container">
+					<button class="w3-button w3-black button-left"
+						onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-black button-right"
+						onclick="plusDivs(1)">&#10095;</button>
+				</div>
+			</div>
+		</center>
+
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				var textBlocks = document.getElementsByClassName("text-block");
+
+				if (n > x.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = x.length
+				}
+
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+					textBlocks[i].style.display = "none";
+				}
+
+				x[slideIndex - 1].style.display = "block";
+				textBlocks[slideIndex - 1].style.display = "block";
+			}
+		</script>
+
+	</section>
+
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+
+	<footer>
+		<p>Copyright &copy; Fake Natty Equipe</p>
+	</footer>
+
+</body>

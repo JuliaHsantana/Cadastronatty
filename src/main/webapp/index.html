@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+
+<link rel="stylesheet" type="text/css" media="screen"
+	href="./css/estilo.css" />
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="imagens/logosem.png"
+	type="image/x-icon">
+<title>Natty Academy - Home</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+
+</head>
+<body>
+
+	<header>
+		<div>
+			<img src="./imagens/logo1.jpeg" class="logo" alt="logo do site">
+			<span> Natty Academy</span>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="html\incluir.html">Incluir Alunos</a></li>
+				<li><a href="html\consultar.html">Consultar Alunos</a></li>
+				<li><a href="ServletAluno?cmd=listar">Listar todos</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+.mySlides {
+	margin-top: -80px;
+	display: none;
+}
+
+.button-container {
+	position: absolute;
+	transform: translateY(-50%);
+	font-size: 24px;
+	width: 30px; /* Defina a largura desejada aqui */
+}
+
+.button-container button {
+	position: absolute;
+	transform: translateY(-50%);
+	font-size: 24px;
+}
+
+.button-left {
+	right: 47px;
+	top: -500px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.button-right {
+	left: 1000px;
+	top: -500px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+/* Media Query for screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 768px) {
+    /* Add styles for smaller screens here */
+    header {
+        text-align: center;
+    }
+    nav ul {
+        text-align: center;
+    }
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .mySlides {
+        margin-top: 0;
+    }
+    /* Hide buttons on smaller screens */
+    .button-container {
+        display: none;
+    }
+}
+
+/* Media Query for screens larger than 768px (e.g., tablets and desktops) */
+@media (min-width: 769px) {
+    /* Add styles for larger screens here */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+    nav li {
+        margin-left: 20px;
+    }
+    .mySlides {
+        margin-top: -80px;
+    }
+    /* Styles for buttons on larger screens */
+    .button-container {
+        position: absolute;
+        transform: translateY(-50%);
+        font-size: 24px;
+        width: 30px; /* Defina a largura desejada aqui */
+    }
+
+    .button-container button {
+        position: absolute;
+        transform: translateY(-50%);
+        font-size: 24px;
+    }
+
+    .button-left {
+        right: 47px;
+        top: -500px;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    .button-right {
+        left: 1000px;
+        top: -500px;
+        border-radius: 5px 5px 5px 5px;
+  	}
+}
+</style>
+		<center>
+			<div class="w3-content w3-display-container">
+
+				<div class="cont">
+					<img class="mySlides" src="./imagens/banner3.png" alt="Norway"
+						style="width: 100%;">
+				</div>
+
+				<div class="cont">
+					<a href="html\equipe.html"><img class="mySlides"
+						src="./imagens/ftGrupo1.png" alt="Norway" style="width: 100%;"></a>
+				</div>
+
+
+				<div class="button-container">
+					<button class="w3-button w3-black button-left"
+						onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-black button-right"
+						onclick="plusDivs(1)">&#10095;</button>
+				</div>
+			</div>
+		</center>
+
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+
+				if (n > x.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = x.length
+				}
+
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+
+				x[slideIndex - 1].style.display = "block";
+			}
+		</script>
+
+	</section>
+
+	<footer>
+		<p>Copyright &copy; 2020 NattyAcademy. All rights reserved.</p>
+	</footer>
+
+</body>
+</html>
+

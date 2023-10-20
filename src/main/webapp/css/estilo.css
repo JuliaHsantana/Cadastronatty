@@ -1,0 +1,251 @@
+body{
+	background-color: #F2ECDF;
+  margin: 0;
+  font-family: Candara Light;
+  font-size: 17px;
+}
+
+
+/* MENU INTEIRO*/
+header * {
+    display: inline-block;
+}
+
+.logo{
+    width: 100px;
+}
+
+header {
+    width: 100%; top: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    background: #E2D4B7;
+    font-family: Candara Light;
+    border-radius: 2px;
+    z-index: 1000; /* Aumente o valor do z-index conforme necessário */
+    box-shadow: 0px 2px 8px 0px #ffe5d9 ;
+}
+
+span {
+    position: absolute;
+    bottom: 35px;
+    color: #07080A;
+    font-size: 20px;
+}
+
+nav{
+    position: absolute;
+    right: 20px;
+    bottom: 20%;
+    color: #07080A;
+    font-family: Candara Light;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #E2D4B7;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #181A17;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: #07080A;
+    font-family: Candara Light;
+}
+
+li a:hover:not(.active) {
+  background-color: #D6C9A8;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+/*-------------------------------------------*/
+
+
+/*RODAPÉ*/
+footer * {
+  display: inline-block;
+}
+
+
+footer {
+top: -1000px;
+  width: 100%;
+  background: #E2D4B7;
+  text-align: center;
+  font-family: Candara Light;
+  justify-content: center;
+  box-shadow: 0px 0px 8px 0px #6765;
+  top: 0;
+  font-size: 20px;
+  height: 40px;
+  display: flex;
+}
+
+* {
+  box-sizing: border-box;
+}
+/*---------------------------------------------------*/
+
+
+/*FOTO EM GRUPO - TELA INICIAL*/
+#fotoGrupo {
+    background-image: url(../imagens/fotog.png);
+    margin-top: 150px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 20px 20px;
+    align-items: center;
+    margin-left: 180px;
+    max-width:80%;
+    max-height:80%;
+}
+
+
+#fotoGrupo div {
+    text-align: center;
+    padding: 400px;
+    color: #E2D4B7;
+}
+
+#fotoGrupo button{
+    border: 0;
+    margin-top: 200px;
+    border-radius: 5px 20px 5px 20px;
+    padding: 10px 20px;
+    background: #E2D4B7;
+    color: black;
+    width: 150px;
+}
+/*----------------------------------------------------*/
+
+
+/*FOTOS DOS INTEGRANTES - PÁGINA EQUIPE*/
+/* Container holding the image and the text */
+.cont {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 70px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+} 
+
+.w3-button w3-black w3-display-left{
+	margin-top:100px
+}
+/*---------------------------------------------------*/
+
+/*INCLUIR ALUNOS*/
+body {font-family:  Candara Light, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=date], select[name="cmbPeriodo"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #e8e5e5;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #E2D4B7;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #E2D4B7;
+  margin-bottom: 20px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 300px;
+  margin-right: 90px;
+  margin-top: -200px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+/*------------------------------------*/
+
+
+/*TABELA DO LISTAR*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #DDD;
+}
+
+tr:hover {background-color: #D6EEEE;}
+/*---------------------------------------------------*/

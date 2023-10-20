@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" media="screen"
+	href="../css/estilo.css" />
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="../imagens/logosem.png"
+	type="image/x-icon">
+<title>Natty Academy - Consult</title>
+</head>
+<body>
+
+	<header>
+		<div>
+			<a href="../index.html"> <img src="../imagens/logo1.jpeg"
+				class="logo" alt="logo do site"></a> <span> Natty Academy</span>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="..\html\incluir.html">Incluir Alunos</a></li>
+				<li><a href="..\ServletAluno?cmd=listar">Listar todos</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<form action="../ServletAluno?cmd=con" method="post">
+		<div class="container">
+			<h1>Consult</h1>
+			<p>Please fill in this form to register the student.</p>
+			<hr>
+
+			<label for="ra"><b>RA</b></label> <input type="text" placeholder="RA"
+				name="txtRa" required>
+
+			<div class="clearfix">
+				<a href="..\index.html"><button type="button" class="cancelbtn">Cancel</button></a>
+				<button type="submit" class="signupbtn">Consult</button>
+			</div>
+		</div>
+
+		</br>
+
+	</form>
+
+	<footer>
+		<p>Copyright &copy; 2020 NattyAcademy. All rights reserved.</p>
+	</footer>
+</body>
+</html>
